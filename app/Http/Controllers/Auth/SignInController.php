@@ -30,7 +30,7 @@ class SignInController extends Controller
             );
 
             if(Auth::attempt($credientials,false)){
-
+//New File
                 if(Auth::User()->hasRole('admin')){
                     return response()->json([
                         'status'=>200,
