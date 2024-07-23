@@ -35,7 +35,8 @@ class SignInController extends Controller
                     return response()->json([
                         'status'=>200,
                         'message' => 'Admin User',
-                        'url'=>'admin/index'
+                        'url'=>'admin/dashboard'
+                        // 'url'=>'/'
                     ]);
                 }
                 else{
